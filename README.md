@@ -138,3 +138,22 @@ Many thanks to the projects below for their inspiration and contributions
 
 # Remind
 Install `pip install gym` and `pip install gym[atari]`. If gym[atari] has install error, `apt-get install cmake`.
+
+# Error
+
+I get: ./run_pong.sh
+
+Traceback (most recent call last):
+  File "/usr/local/bin/kerlym", line 4, in <module>
+    __import__('pkg_resources').run_script('KeRLym==0.0.2', 'kerlym')
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 719, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 1517, in run_script
+    exec(script_code, namespace, namespace)
+  File "/usr/local/lib/python2.7/dist-packages/KeRLym-0.0.2-py2.7.egg/EGG-INFO/scripts/kerlym", line 6, in <module>
+    
+  File "build/bdist.linux-x86_64/egg/kerlym/__init__.py", line 1, in <module>
+  File "build/bdist.linux-x86_64/egg/kerlym/agents.py", line 1, in <module>
+  File "build/bdist.linux-x86_64/egg/kerlym/pg.py", line 4, in <module>
+ImportError: No module named gym
+
